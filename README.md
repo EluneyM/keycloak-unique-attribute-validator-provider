@@ -4,9 +4,11 @@ This repository contains the Keycloak Unique Attribute Validator Provider, desig
 
 ## Prerequisites
 
-Before you begin, ensure that the `User Profile` feature is enabled in Keycloak. By default, this feature is not active. To enable it, you must start Keycloak with a specific feature flag.
+Before you begin, ensure that the `User Profile` feature is enabled in Keycloak. By default, this feature is not active. To enable it, you must start Keycloak with a specific feature flag. (this action is not required if Keycloak version is 26.2.4)
 
 ## Enabling User Profile in Keycloak
+
+IMPORTANT: Check if the feature mentioned below exists in the version of Keycloak you are working with. If it is present in the documentation, you probably don’t need to enable it.
 
 To enable the `User Profile` feature:
 
@@ -29,6 +31,7 @@ docker compose up -d
 
 ### Enabling User Profile
 
+IMPORTANT: check the instructions for the version of Keycloak you are working with.
 1. In the realm, navigate to `Realm Settings -> General`.
 2. Enable `User Profile Enabled`.
 
